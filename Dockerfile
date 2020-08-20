@@ -23,3 +23,5 @@ FROM library/alpine:3.12
 EXPOSE 3179
 
 COPY --from=builder /go/bin/* /usr/local/bin/
+
+ENTRYPOINT ["perkeepd"]
